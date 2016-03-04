@@ -1,0 +1,257 @@
+    body {
+        width: 1290px;
+        height: auto;
+        margin: auto;
+        border: 1px black solid;
+        background-color: #D9DBDD;
+        font-family: 'Halant', serif;
+    }
+    
+    .container {
+        width: 1000px;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    /********* header  *********/
+    
+    header {
+        background-color: #2B373B;
+        width: 250px;
+        height: 590px;
+        font-size: 20px;
+    }
+    
+    header img {
+        display: block;
+        border-radius: 100%;
+        background-color: #B9BCC0;
+        padding: 7px;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    /********* nav *********/
+    
+    nav {
+        width: 250px;
+        font-weight: bold;
+    }
+    
+    nav ul {
+        padding-left: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        list-style-type: none;
+        margin-bottom: 2px;
+    }
+    
+    .animation_menu {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        background-color: #189D93;
+        color: white;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        position: relative;
+    }
+    
+    .animation_menu:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #021533;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+    
+    .animation_menu:hover:before,
+    .animation_menu:focus:before,
+    .animation_menu:active:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+    /********* section  *********/
+    
+    #profil,
+    #resume,
+    #portfolio,
+    #contact {
+        width: 750px;
+        height: auto;
+        background-color: white;
+        border: 1px white solid;
+    }
+    
+    .container_profil,
+    .container_resume,
+    .container_portfolio,
+    .container_contact {
+        width: 600px;
+        margin: 50px auto;
+    }
+    
+    #resume,
+    #portfolio,
+    #contact {
+        display: none;
+    }
+    /**************/
+    
+    .cadre_1 {
+        border: 1px #CAC4C4 solid;
+        margin-bottom: 10px;
+    }
+    
+    .cadre_2 {
+        border: 1px #CAC4C4 solid;
+        margin: 2px;
+        padding: 15px;
+    }
+    /********* profil *********/
+    
+    .container_profil h1,
+    .container_profil h2,
+    .container_profil h3 {
+        text-align: center;
+    }
+    
+    .container_profil h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    
+    .container_profil h3 {
+        font-weight: 100;
+        font-style: italic;
+        margin-top: 8px;
+    }
+    
+    .container_profil h2,
+    .container_profil h3 {
+        color: #189D93;
+    }
+    
+    .container_profil p {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        line-height: 45px;
+        font-size: 20px
+    }
+    /********* résumé  *********/
+    
+    #resume h2 {
+        color: #189D93;
+        font-size: 20px;
+        border-left: 3px #189D93 solid;
+        border-bottom: 1px #189D93 solid;
+        padding-left: 15px;
+        margin-top: 40px;
+    }
+    
+    #resume h3 {
+        font-size: 18px;
+        color: #2B373B;
+    }
+    
+    #resume h4 {
+        font-size: 16px;
+        color: #2B373B;
+    }
+    
+    #comp {
+        width: 160px;
+    }
+    
+    #forma {
+        width: 260px;
+    }
+    
+    #exper {
+        width: 340px;
+    }
+    
+    .langages {
+        text-align: center;
+    }
+    
+    .langages img {
+        margin: 5px 95px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    
+    .langages img:hover {
+        -webkit-filter: none;
+        filter: none;
+    }
+    
+    #resume p {
+        font-size: 16px;
+    }
+    /********* portfolio  *********/
+    
+    .container_portfolio hr {
+        margin-bottom: 450px;
+    }
+    /********* contact  *********/
+    
+    .container_contact h4 {
+        color: #189D93;
+        border-bottom: 1px #189D93 solid;
+    }
+    
+    form {
+        display: flex;
+        justify-content: space-between
+    }
+    
+    form input {
+        height: 46px;
+    }
+    
+    textarea {
+        height: 155px;
+        width: 350px;
+        overflow: auto;
+    }
+    
+    button {
+        color: white;
+        margin-top: 20px;
+        ;
+        margin-left: 270px;
+        padding: 10px;
+        background-color: #189D93;
+        border: none;
+    }
+    /********* footer  *********/
+    
+    footer {
+        background-color: #F1F1F1;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    footer a {
+        color: #189D93;
+        padding: 10px;
+    }
+    
+    footer a:hover {
+        color: #021533;
+    }
+    /**************/
