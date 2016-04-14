@@ -3,186 +3,232 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Halant:300,400,500,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <title>cv_developpeur_Web</title>
+    <link href='https://fonts.googleapis.com/css?family=Halant:300,400,500,600,700' rel='stylesheet' type='text/css'>
+
+    <title>Zoulikha BOULAGHMEN developpeurse Web</title>
 </head>
 
 <body>
+    <!-------  header ------->
+    <header id="home">
 
-    <!------- header ------->
-    <header>
-        <h3 class="en_construction">En construction</h3>
-        <div class="photo_de_profil">
-            <img src="images/zoulikha_boulaghmen.png" alt="developpeur_web">
+        <div class="container-header">
+            <!------- nav ------->
+            <div class="icone_menu" id="iconeMenu"><i class="fa fa-bars "></i>
+            </div>
+            <nav id="contentMenu">
+                <div class="icone_close" id="iconeClose"><i class="fa fa-times" aria-hidden="true"></i></div>
 
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#formations">Formation</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#experiences">Expériences</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!------- fin nav ------->
+            <div class="titre_develoeloppeur_web">
+                <h1>Zoulikha BOULAGHMEN</h1>
+                <p>Développeuse Web
+                    <br>En Formation</p>
+                <div class="scroll">
+                    <a href="#presentation">
+                        <i class="fa fa-angle-double-down fa-inverse"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#" id="lien-profil" class="animation_menu">Profil<i class="fa fa-user"></i>
-</a>
-                </li>
-                <li>
-                    <a href="#" id="lien_competences" class="animation_menu">Compétences<i class="fa fa-flag"></i>
-
-
-</a></li>
-                <li><a href="#" id="lien_formations" class="animation_menu">Formations<i class="fa fa-graduation-cap"></i>
-
-</a></li>
-                <li>
-                    <a href="#" id="lien_experience" class="animation_menu">Expérience<i class="fa fa-briefcase"></i>
-</a></li>
-                <li>
-                    <a href="#" id="lien_contact" class="animation_menu">Contact<i class="fa fa-envelope"></i>
-</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <!------- fin header ------->
-    <!------- section ------->
-    <section>
-        <!------- profil ------->
-        <div class="container_profil" id="profil">
-            <h1>Zoulikha BOULAGHMEN</h1>
-            <h2>Developpeuse Web Junior</h2>
-            <h3>En Formation</h3>
-            <hr>
-            <p>Issue d'une école polytechnique, j'ai entamé ma carrière professionnelle en tant que chargée d'études en hydraulique. Afin d'orienter mes compétences vers des métiers d'avenir, j'ai choisi la formation dispensée par l'école Up To by Simplon, qui va de pair avec mes projets à moyen et à long terme.</p>
 
-        </div>
-        <!------- fin profil ------->
-        <!------- competences ------->
-        <div class="container_competences" id="competences">
-            <h1 id="comp">Compétences</h1>
-            <hr>
-            <h2>LANGUAGES WEB ET FRAMEWORKS</h2>
-            <h3 class="titre_trois-competences">En cours d'apprentissage</h3>
+    <!-------  présentartion ------->
+    <section id="presentation">
+        <h1>A propos de moi</h1>
+        <div class="container_presentation">
 
-            <div class="langages">
-                <img src="images/html5-couleur.png" alt="html5-couleur">
-                <br/>
-                <img src="images/css3-couleur.png" alt="css3-couleur">
-                <img src="images/JS-couleur.png" alt="JS-couleur">
-                <br/>
-                <img src="images/bootstrap.png" alt="bootstrap">
+            <img class="photo_zoulikha" src="images/zoulikha_boulaghmen.png" alt="image_zoulikha_boulaghmen" />
+            <div class="text_presentation">
+                <p>Issue d'une école polytechnique, j'ai entamé ma carrière professionnelle en tant que chargée d'études en hydraulique. Afin d'orienter mes compétences vers des métiers d'avenir, j'ai choisi la formation dispensée par l'école Up To by Simplon, qui va de pair avec mes projets à moyen et à long terme.</p>
             </div>
-        </div>
-        <!------- fin competences ------->
-        <!------- formations ------->
-        <div class="container_formations" id="formations">
-            <h1 id="forma">Formations / Diplômes </h1>
-            <hr>
-            <div>
-
-                <div class="cadre_1">
-                    <div class="cadre_2">
-                        <div>
-                            <h3>Developpement Web/Mobile,<br/>École du numérique Up To, Montpellier</h3>
-                            <h4>2015 - à ce jour</h4>
-                            <p>La formation est basée sur la pratique, l'autonomie et le travail d'équipe
-                                <br>Principaux partenaires : Face Hérault, DELL et Simplon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cadre_1">
-                    <div class="cadre_2">
-
-                        <div>
-                            <h3>Diplôme d'ingénieur en Hydraulique,<br/>École Nationale Polytechnique (ENP), Algérie </h3>
-                            <h4>2007 - 2013</h4>
-                            <p><span>Projet de fin d’étude : </span>Étude d’Alimentation en eau potable du couloir de Tamalous, Ain Kechra, Beni Oulbane et des zones environnantes à partir du barrage de Guenitra </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!------- fin formations ------->
-        <!------- expérience ------->
-        <div class="container_experience " id="experience">
-            <h1 id="exper">Expériences Professionnelles</h1>
-            <hr>
-            <div>
-                <div class="cadre_1">
-                    <div class="cadre_2">
-                        <h3>Chargée d’études en hydraulique,<br/>Bureau d’Études en Hydraulique, Algérie </h3>
-                        <h4>2013 – 2014</h4>
-                        <p><span>Mission: </span>Etudes des réseaux d'alimentation en eau potable et d'assainissement , élaboration des devis estimatifs et quantitatifs de projets </p>
-                    </div>
-                </div>
-                <div class="cadre_1">
-                    <div class="cadre_2">
-                        <h3>Stage au sein du Ministère des Ressources en Eaux, Algérie </h3>
-                        <h4>Juillet 2012</h4>
-                        <p><span>Mission: </span>Découvrir le fonctionnement des différents services du ministère des ressources en eaux, y compris les tâches attribuées à chaque représentation régionale. </p>
-                    </div>
-                </div>
-                <div class="cadre_1">
-                    <div class="cadre_2">
-                        <h3>Stage au sein de la Station de Traitement des Eaux de Tichi-haff, Algérie </h3>
-                        <h4>Juillet 2011</h4>
-                        <p><span>Mission: </span>Étude des différentes étapes du processus de traitement d’eau du barrage de Tichi-haff. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!------- fin expérience ------->
-        <!------- contact ------->
-        <div class="container_contact" id="contact">
-
-            <h1>Contact</h1>
-            <hr/>
-            <h4><i class="fa fa-home"></i>  Adresse</h4>
-            <p>938 avenue su Pére Soulas, Résidence le Saint Denis, Bâtiment A
-                <br/>34090,Montpellier</p>
-
-            <h4><i class="fa fa-envelope"></i>  Email</h4>
-            <p>rezzouk.zoulikha@gmail.com</p>
-            <h4><i class="fa fa-paper-plane-o"></i>  Contactez moi ( <em>Formulaire non fonctionnel pour le moment</em> )</h4>
-            <form id="contactForm" method="post" action="">
-                <div>
-                    <div>
-                        <input id="envoyerName" type="text" placeholder="Name" name="envoyerName">
-                    </div>
-                    <div>
-                        <input id="envoyerEmail" type="email" placeholder="Email" name="envoyerEmail">
-                    </div>
-                    <div>
-                        <input id="telephone" type="text" placeholder="Téléphone" name="telephone">
-
-                    </div>
-                </div>
-                <div>
-                    <textarea id="message" placeholder="Message" rows="6" name="message">
-                    </textarea>
-                    <button type="submit">Envoyer</button>
-                </div>
-            </form>
 
         </div>
-
-        </div>
-        <!------- fin contact ------->
-        <!------- footer ------->
-
-        <footer>
-            <div>
-                <a href="https://twitter.com/ZoulikhaRezzouk"><i class="fa fa-twitter fa-2x"></i>
-</a>
-                <a href="https://www.linkedin.com/in/zoulikha-rezzouk-627163b4?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-                <a href="CV-Zoulikha_BOULAGHMEN-developpeur Web.pdf" title="CV PDF" target="_blank"><i class="fa fa-download fa-2x"></i></a>
-            </div>
-            <div>
-                <p>© 2016 | Zoulikha BOULAGHMEN | Mentions légales</p>
-            </div>
-        </footer>
-        <!------- fin footer ------->
     </section>
+    <!------- fin présentation ------->
+    <!-------  formation ------->
+    <section id="formations">
+        <h1>Formations & Diplômes</h1>
+        <div class="container_formations">
+            <div class="formations_item">
+                <div class="timeline_date">
+                    <p> 14/12/2015
+                        <br/>-
+                        <br/>à ce jour</p>
+                </div>
+                <div class="timeline-content">
+                    <div class="carre"></div>
+                    <h2>Formation en Developpement Web/Mobile</h2>
+                    <h3>École du numérique Up To, Montpellier</h3>
+                    <p>7 mois de formation intensive, basée sur la pratique, l'autonomie et le travail d'équipe
+                        <br/>Principaux partenaires : Face Hérault, DELL, Simplon et FrenchSouth.digital</p>
+                </div>
+            </div>
+            <div class="formations_item">
+                <div class="timeline_date">
+                    <p>2007
+                        <br/>-
+                        <br/>2013</p>
+                </div>
+                <div class="timeline-content">
+                    <div class="carre"></div>
+                    <h2>Diplôme d'ingénieur en Hydraulique</h2>
+                    <h3>École Nationale Polytechnique (ENP), Algérie </h3>
+                    <p>Projet de fin d’étude : Étude d’Alimentation en eau potable du couloir de Tamalous, Ain Kechra, Beni Oulbane et des zones environnantes à partir du barrage de Guenitra</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------  fin formations ------->
+    <!-------  compétences ------->
+    <section id="competences">
+        <div class="competences_container">
+            <h1>Compétences</h1>
+            <h2>Langages et Frameworks en cours d'apprentissage </h2>
+            <div class="languages">
+
+                <div>
+                    <h5>html5</h5>
+                    <img src="images/html5-couleur.png" alt="html5" />
+                </div>
+                <div>
+                    <h5>css3</h5>
+                    <img src="images/css3-couleur.png" alt="css3" />
+                </div>
+                <div>
+                    <h5>Javascript</h5>
+                    <img src="images/JS-couleur.png" alt="Javascript" />
+                </div>
+                <div>
+                    <h5>php</h5>
+                    <img src="images/php-couleur.png" alt="php" />
+                </div>
+                <div>
+                    <h5>sql</h5>
+                    <img src="images/sql-couleur_03.png" alt="sql" />
+                </div>
+
+            </div>
+            <div class="frameworks">
+                <div>
+                    <h5>Bootstrap</h5>
+                    <img src="images/bootstrap.png" alt="Bootstrap" />
+                </div>
+                <div>
+                    <h5>JQuery</h5>
+                    <img src="images/jquery-couleur.png" alt="JQuery" />
+                </div>
+                <div>
+                    <h5>Angular</h5>
+                    <img src="images/angular-js-color.png" alt="Angular" />
+                </div>
+                <div>
+                    <h5>Symfony</h5>
+                    <img src="images/symphony-couleur.png" alt="Symfony" />
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!------- fin compétences ------->
+    <!-------  Expériences ------->
+    <section id="experiences">
+        <h1>Expérience professionnelle</h1>
+        <div class="experiences_item">
+            <div class="experiences_text1">
+                <h2>Chargée d’études en hydraulique</h2>
+                <h3>Bureau d’Études en Hydraulique, Algérie</h3>
+            </div>
+            <div class="intervalle_temps">
+                <div>
+                    <p>2013 – 2014
+                        <br/>(9 mois)</p>
+                </div>
+            </div>
+            <div class="experiences_text2">
+                <p>Etudes des réseaux d'alimentation en eau potable et d'assainissement , élaboration des devis estimatifs et quantitatifs de projets</p>
+            </div>
+        </div>
+        <div class="experiences_item">
+            <div class="experiences_text1">
+                <h2>Stagiaire</h2>
+                <h3> Ministère des Ressources en Eaux, Algérie</h3>
+            </div>
+            <div class="intervalle_temps">
+                <div>
+                    <p>Juillet
+                        <br/>2012</p>
+                </div>
+            </div>
+            <div class="experiences_text2">
+                <p>Stage d'immersion dans les différents services du ministère des ressources en eaux, et de découverte des tâches attribuées à chaque représentation régionale. </p>
+            </div>
+        </div>
+        <div class="experiences_item">
+            <div class="experiences_text1">
+                <h2>Stagiaire</h2>
+                <h3> Station de Traitement des Eaux de Tichi-haff, Algérie </h3>
+            </div>
+            <div class="intervalle_temps">
+                <div>
+                    <p>Juillet
+                        <br/>2011</p>
+                </div>
+            </div>
+            <div class="experiences_text2">
+                <p>Étude des différentes étapes du processus de traitement d’eau du barrage de Tichi-haff. </p>
+            </div>
+        </div>
+    </section>
+    <!------- fin Expériences ------->
+    <!------- Loisirs ------->
+    <section id="loisirs">
+        <div class="container_loisirs">
+
+
+        </div>
+    </section>
+    <!------- fin Loisirs------->
+    <!------- Contact ------->
+    <section id="contact">
+        <div class="container_contact">
+            <h1>Contact</h1>
+            <!--  <INPUT type="button" name="bouton" value='Cliquez-moi !' onClick="this.value='Touché !'">-->
+            <button type="button" id="boutonEmail">
+                <i class="fa fa-envelope" aria-hidden="true"></i> E-mail
+            </button>
+            <a href="CV-Zoulikha_BOULAGHMEN-developpeur Web.pdf" title="CV PDF" target="_blank" id="cv_pdf"><i class="fa fa-download fa-1x"></i>  Mon CV en PDF</a>
+            <h1>Suivez moi sur</h1>
+            <div>
+                <a href="https://twitter.com/ZoulikhaRezzouk" class="social_media"><i class="fa fa-twitter-square  fa-3x" aria-hidden="true"></i>
+
+</a>
+                <a href="https://www.linkedin.com/in/zoulikha-rezzouk-627163b4?trk=nav_responsive_tab_profile" target="_blank" class="social_media"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+</a>
+            </div>
+        </div>
+    </section>
+    <!------- fin Contact------->
+
+
     <!------- javascript ------->
     <script type="text/javascript" src="js/cv.js"></script>
     <!------- fin javascript ------->
