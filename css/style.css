@@ -153,6 +153,7 @@ body {
 #competences h1,
 #experiences h1,
 #contact h1 {
+    font-family: cursive;
     font-size: 30px;
     text-align: center;
     font-style: italic;
@@ -311,6 +312,7 @@ nav {
     background-color: rgba(1, 1, 1, 0.7);
     z-index: 1;
     display: none;
+    font-family: cursive;
 }
 
 nav a {
@@ -538,6 +540,13 @@ nav {
 .experiences_text1 h3,
 .experiences_text2 P {
     line-height: normal;
+}
+
+.experiences_text1 h3 {
+    color: #02A88B;
+}
+
+.experiences_text2 P {
     color: rgba(1, 1, 1, 0.8);
 }
 
@@ -565,13 +574,19 @@ nav {
     text-align: center;
 }
 
+.email_cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     width: 270px;
     height: 50px;
     background-color: grey;
     border: none;
     color: white;
-    margin: 0 25px;
+    margin: 0 70px;
 }
 
 #cv_pdf {
@@ -579,8 +594,7 @@ button {
     text-decoration: none;
     color: white;
     padding: 16px;
-    margin: 0 25px;
-    ;
+    margin: 0 70px;
     border-radius: 30px;
 }
 
@@ -590,20 +604,69 @@ button {
     margin: 20px;
 }
 
+.container_contact p {
+    margin: 50px;
+}
+
 
 /************* fin contact*************/
 
 
-/*#02A88B*/
+/************* media queries *************/
+
+@media (max-width: 860px) {
+    /*************media queries présentation **************/
+    .container_presentation {
+        flex-direction: column;
+    }
+    .text_presentation {
+        width: 100%;
+    }
+    .text_presentation p {
+        padding: 5px 5px 5px 5px;
+    }
+    .photo_zoulikha {
+        margin-bottom: 30px;
+    }
+    /************* fin media queries présentation **************/
+    /************* media queries formations **************/
+    .formations_item {
+        flex-direction: column;
+    }
+    .timeline-content {
+        width: 90%;
+    }
+    .timeline_date {
+        margin-bottom: 30px;
+    }
+    .carre {
+        left: 47%;
+        top: -10px;
+    }
+    /************* fin media queries formations **************/
+    /*************  media queries compétences **************/
+    .languages img,
+    .frameworks img {
+        width: 70%;
+    }
+    languages h5,
+    .frameworks h5 {
+        font-size: 13px;
+    }
+    /************* fin media queries compétences **************/
+    /*************  media queries expériences **************/
+    /************* fin media queries expétences **************/
+    /************* media queries contact **************/
+    .email_cv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    button {
+        margin-bottom: 70px;
+    }
+    /************* fin media queries contact **************/
+}
 
 
-/*#81B71A*/
-
-
-/*#2B303B*/
-
-
-/*#FE8E22*/
-
-
-/*#4B061B*/
+/************* fin media queries *************/
