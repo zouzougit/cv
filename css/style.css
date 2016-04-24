@@ -146,6 +146,11 @@ body {
     width: 100%;
     height: auto;
     font-family: 'georgia';
+    margin: auto;
+}
+
+body p {
+    font-size: 18px;
 }
 
 #presentation h1,
@@ -170,11 +175,16 @@ body {
 
 .experiences_text1 h2,
 .timeline-content h2 {
-    font-size: 18px;
+    font-size: 22px;
     color: black;
     font-weight: 600;
     font-style: italic;
     padding-bottom: 10px;
+}
+
+h3 {
+    color: #02A88B;
+    font-size: 18px;
 }
 
 .timeline_date,
@@ -308,7 +318,8 @@ header p {
 }
 
 nav {
-    padding: 30px;
+    height: 100%;
+    padding: 10% 30px;
     background-color: rgba(1, 1, 1, 0.7);
     z-index: 1;
     display: none;
@@ -542,10 +553,6 @@ nav {
     line-height: normal;
 }
 
-.experiences_text1 h3 {
-    color: #02A88B;
-}
-
 .experiences_text2 P {
     color: rgba(1, 1, 1, 0.8);
 }
@@ -612,6 +619,22 @@ button {
 /************* fin contact*************/
 
 
+/************* footer*************/
+
+.back-to-top {
+    display: none;
+    text-decoration: none;
+    color: #02A88B;
+    z-index: 1;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+
+/************* fin footer*************/
+
+
 /************* media queries *************/
 
 @media (max-width: 860px) {
@@ -670,3 +693,18 @@ button {
 
 
 /************* fin media queries *************/
+
+
+/*#02A88B*/
+
+
+/*#81B71A*/
+
+
+/*#2B303B*/
+
+
+/*#FE8E22*/
+
+
+/*#4B061B*/

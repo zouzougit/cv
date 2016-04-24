@@ -11,7 +11,7 @@
     <title>Zoulikha BOULAGHMEN developpeurse Web</title>
 </head>
 
-<body>
+<body id="top">
     <!-------  header ------->
     <header id="home">
 
@@ -208,10 +208,11 @@
     </section>
     <!------- fin Loisirs------->
     <!------- Contact ------->
+
     <section id="contact">
         <div class="container_contact">
             <h1>Contact</h1>
-
+            <!--  <INPUT type="button" name="bouton" value='Cliquez-moi !' onClick="this.value='Touché !'">-->
             <div class="email_cv">
                 <button type="button" id="boutonEmail">
                     <i class="fa fa-envelope" aria-hidden="true"></i> E-mail
@@ -234,11 +235,15 @@
 
     </section>
     <!------- fin Contact------->
-
-
-    <!------- javascript ------->
-    <script type="text/javascript" src="js/cv.js"></script>
-    <!------- fin javascript ------->
+    <footer>
+        <a href="#top" class="back-to-top">
+            <i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <!------- javascript ------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/cv.js"></script>
+        <!------- fin javascript ------->
+    </footer>
 </body>
 
 </html>
