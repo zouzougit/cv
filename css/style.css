@@ -647,7 +647,7 @@ button {
 
 /************* media queries *************/
 
-@media (max-width: 865px) {
+@media (max-width: 400px) {
     /*************header **************/
     header h1 {
         font-size: 22px;
@@ -662,7 +662,12 @@ button {
     .titre_develoeloppeur_web::after {
         width: 40px;
     }
-    /*************fin header **************/
+}
+
+
+/*************fin header **************/
+
+@media (max-width: 865px) {
     /*************media queries présentation **************/
     .container_presentation {
         flex-direction: column;
