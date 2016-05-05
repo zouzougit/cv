@@ -283,22 +283,21 @@ header p {
     }
 }
 
-.titre_develoeloppeur_web::before {
+.titre_develoeloppeur_web::before,
+.titre_develoeloppeur_web::after {
     position: absolute;
     bottom: 0;
-    left: 0;
     border-bottom: 2px #02A88B solid;
     width: 110px;
     content: " ";
 }
 
+.titre_develoeloppeur_web::before {
+    left: 0;
+}
+
 .titre_develoeloppeur_web::after {
-    position: absolute;
-    bottom: 0;
     right: 0;
-    border-bottom: 2px #02A88B solid;
-    width: 110px;
-    content: " ";
 }
 
 
@@ -314,7 +313,8 @@ header p {
 }
 
 .icone_menu {
-    font-size: 30px;
+    font-size: 40px;
+    z-index: 1;
 }
 
 nav {
@@ -342,8 +342,8 @@ nav a:hover {
 .icone_close,
 nav {
     position: fixed;
-    right: 5px;
-    top: 5px;
+    right: 10px;
+    top: 10px;
 }
 
 .icone_close {
@@ -518,13 +518,18 @@ nav {
 
 .experiences_item {
     width: 85%;
+    margin: auto;
+    position: relative;
+}
+
+.container_experiences_item {
     height: 135px;
     background-color: white;
     margin: auto;
     color: white;
     margin-bottom: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border-radius: 20px;
 }
@@ -541,6 +546,10 @@ nav {
     align-items: center;
     text-align: center;
     line-height: 30px;
+    color: white;
+    position: absolute;
+    top: -14px;
+    right: 54%;
 }
 
 .experiences_text1 {
@@ -585,6 +594,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
 }
 
 button {
@@ -629,6 +639,7 @@ button {
     position: fixed;
     right: 30px;
     bottom: 30px;
+    font-size: 25px;
 }
 
 
@@ -637,7 +648,13 @@ button {
 
 /************* media queries *************/
 
-@media (max-width: 860px) {
+@media (max-width: 865px) {
+    /*************header **************/
+    .titre_develoeloppeur_web::before,
+    .titre_develoeloppeur_web::after {
+        width: 75px;
+    }
+    /*************fin header **************/
     /*************media queries présentation **************/
     .container_presentation {
         flex-direction: column;
@@ -667,18 +684,6 @@ button {
         top: -10px;
     }
     /************* fin media queries formations **************/
-    /*************  media queries compétences **************/
-    .languages img,
-    .frameworks img {
-        width: 70%;
-    }
-    languages h5,
-    .frameworks h5 {
-        font-size: 13px;
-    }
-    /************* fin media queries compétences **************/
-    /*************  media queries expériences **************/
-    /************* fin media queries expétences **************/
     /************* media queries contact **************/
     .email_cv {
         flex-direction: column;
@@ -690,6 +695,62 @@ button {
     }
     /************* fin media queries contact **************/
 }
+
+
+/*************  media queries expériences **************/
+
+@media (max-width: 1000px) {
+    #experiences h1 {
+        margin-bottom: 50px;
+    }
+    .container_experiences_item {
+        display: block;
+        height: auto;
+        margin-bottom: 100px;
+        padding-top: 1px;
+    }
+    .intervalle_temps {
+        border: none;
+        top: -56px;
+        right: 14%;
+    }
+    .experiences_text1 {
+        margin-top: 50px;
+    }
+    .experiences_text1,
+    .experiences_text2 {
+        width: 90%;
+    }
+}
+
+
+/************* fin media queries expétences **************/
+
+
+/*************  media queries compétences **************/
+
+@media (max-width:600px) {
+    .languages img,
+    .frameworks img {
+        width: 70px;
+        height: auto;
+    }
+    languages h5,
+    .frameworks h5 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:460px) {
+    .languages img,
+    .frameworks img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+
+/************* fin media queries compétences **************/
 
 
 /************* fin media queries *************/
